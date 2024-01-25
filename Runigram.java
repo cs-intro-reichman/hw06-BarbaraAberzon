@@ -9,11 +9,11 @@ public class Runigram {
 	public static void main(String[] args) {
 
 		// Tests the reading and printing of an image:	
-		Color[][] tinypic = read("tinypic.ppm");
-		print(tinypic);
+		//Color[][] tinypic = read("tinypic.ppm");
+		//print(tinypic);
 	
 		// Creates an image which will be the result of various 
-		Color[][] imageOut;
+		///Color[][] imageOut;
 
 		/// Tests the horizontal flipping of an image:
 		// imageOut = flippedHorizontally(tinypic);
@@ -26,9 +26,9 @@ public class Runigram {
 		// print(imageOut);
 
 		// Testsimage:
-		imageOut = scaled(tinypic, 3 ,5);
-		System.out.println();
-		print(imageOut);
+		///imageOut = scaled(tinypic, 3 ,5);
+		///System.out.println();
+		///print(imageOut);
 		
 	}
 

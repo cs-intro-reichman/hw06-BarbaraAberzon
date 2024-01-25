@@ -27,7 +27,7 @@ public class ColorDemo {
 		System.out.println("B = " + yellow.getBlue());  // prints   0
 
         // Tests the print method: 
-		System.out.print("Red = "); print(red);
+		System.out.print("red = "); print(red);
 		System.out.println();
 
         // Constructs an array of Color objects, and prints the array elements.

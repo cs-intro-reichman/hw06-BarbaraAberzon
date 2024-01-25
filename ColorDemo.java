@@ -21,13 +21,13 @@ public class ColorDemo {
 
         // To access the RGB values of a Color object,
         // we use three "get" nethods. For example: 
-        System.out.println("RGB values of yellow:");     
-		System.out.println("R = " + yellow.getRed());   // prints 255
-		System.out.println("G = " + yellow.getGreen()); // prints 255
-		System.out.println("B = " + yellow.getBlue());  // prints   0
+        System.out.println("RGB values of red:");     
+		System.out.println("R = " + red.getRed());   // prints 255
+		System.out.println("G = " + red.getGreen()); // prints 255
+		System.out.println("B = " + red.getBlue());  // prints   0
 
         // Tests the print method: 
-		System.out.print("Red = "); print(red);
+		System.out.print("white = "); print(white);
 		System.out.println();
 
         // Constructs an array of Color objects, and prints the array elements.

@@ -9,11 +9,12 @@ public class Runigram {
 	public static void main(String[] args) {
 
 		// Tests the reading and printing of an image:	
-		//Color[][] tinypic = read("tinypic.ppm");
-		//print(tinypic);
-	
-		// Creates an image which will be the result of various 
-		///Color[][] imageOut;
+		Color[][] tinypic = read("tinypic.ppm");
+		print(tinypic);
+		Color[][] imageOut;
+		imageOut = grayScaled(tinypic);
+
+		print(imageOut);
 
 		/// Tests the horizontal flipping of an image:
 		// imageOut = flippedHorizontally(tinypic);
@@ -103,11 +104,11 @@ public class Runigram {
 	
 	// Computes the luminance of the RGB values of the given pixel, using the formula 
 	public static Color luminance(Color pixel) {
-		int r = (int)(pixel.getRed()*0.299) ;
-		int g = (int)(pixel.getGreen()*0.587) ;
-		int b = (int)(pixel.getBlue()*0.114) ; 
+		double r = (pixel.getRed()*0.299) ;
+		double g = (pixel.getGreen()*0.587) ;
+		double b = (pixel.getBlue()*0.114); 
 
-		int lum = r + g + b ;
+		int lum =  (int)(r + g + b );
 		
 		Color luminance = new Color(lum , lum , lum) ;
 		return luminance;
